@@ -30,7 +30,7 @@
    if(m5_vga, ['m5_set(in_fpga, 0)'])
 \SV
    // Include Tiny Tapeout Lab.
-   m4_include_lib(['https:/']['/raw.githubusercontent.com/os-fpga/Virtual-FPGA-Lab/c4fc7d9585a40d1633ff4ccd790103f25a430118/tlv_lib/tiny_tapeout_lib.tlv'])
+   m4_include_lib(['https://raw.githubusercontent.com/os-fpga/Virtual-FPGA-Lab/6d29c36ae09ad7581b5da8b2192e109047e84628/tlv_lib/tiny_tapeout_lib.tlv'])
 
 \TLV my_design()
 
