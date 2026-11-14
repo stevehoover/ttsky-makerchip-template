@@ -54,6 +54,9 @@ The repo is a Git fork of `TinyTapeout/ttsky-verilog-template` (remote `upstream
   from the Actions API.
 - `project.tlv` uses M5's `MAKERCHIP` to include the lab and stimulus only in Makerchip compiles; the TT compile
   must not define it.
+- The **TT VGA view** runs the Makerchip compile's Verilog in VGA Playground, so `project.tlv` keeps
+  `--inlineGen` on its first line and its `top` test bench in `` `ifdef MAKERCHIP`` (see the makerchip-tt-views
+  README, "Designs for TT VGA").
 
 ## Testing a change
 

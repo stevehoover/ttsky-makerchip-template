@@ -39,6 +39,11 @@ Design in [src/project.tlv](src/project.tlv), in Verilog/SystemVerilog/TL-Verilo
 bar compiles and simulates it, with the Tiny Tapeout demo board in the VIZ view. Adapt the testbench to your
 design (see [test/README.md](test/README.md)), and keep `pinout` and `docs/info.md` up to date.
 
+For a VGA design on the [Tiny VGA Pmod](https://tinytapeout.com/specs/pinouts/), set `vga` to 1 in the settings,
+drive the color signals `R`, `G` and `B` from your logic (see `tt_vga()` in Virtual FPGA Lab's
+`tiny_tapeout_lib.tlv`), and set `clock_hz: 25175000` and the VGA pins in `info.yaml`. Makerchip's TT VGA view
+shows it running.
+
 ### 3. Run the Tiny Tapeout flow
 
 Click "Run TT Flow" (the rocket in `src/project.tlv`'s title bar). It checks your project's information,
